@@ -96,80 +96,6 @@
       border-radius: 15px;
       box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
     }
-  </style>
-</head>
-<body>
-<!-- Pantalla de contraseña -->
-<div id="passwordScreen" class="screen active">
-  <h2>🔒 Ingresa la contraseña</h2>
-  <div class="input-display" id="inputDisplay">••••</div>
-  <div class="keypad">
-    <button class="key" onclick="enterDigit('1')">1</button>
-    <button class="key" onclick="enterDigit('2')">2</button>
-    <button class="key" onclick="enterDigit('3')">3</button>
-    <button class="key" onclick="enterDigit('4')">4</button>
-    <button class="key" onclick="enterDigit('5')">5</button>
-    <button class="key" onclick="enterDigit('6')">6</button>
-    <button class="key" onclick="enterDigit('7')">7</button>
-    <button class="key" onclick="enterDigit('8')">8</button>
-    <button class="key" onclick="enterDigit('9')">9</button>
-    <button class="key" onclick="checkPassword()">✔</button>
-    <button class="key" onclick="enterDigit('0')">0</button>
-    <button class="key" onclick="deleteLast()">⌫</button>
-  </div>
-</div>
-<div id="notepadScreen" class="screen">
-  <div class="notepad" id="page1">
-    <h3>📅 27 de diciembre de el 2025</h3>
-    <h4>💌 Para mi querida niña hermosa</h4>
-    <p> Habia pensado en tantantas maneras de mandarte una carta y aunque te e escrito varias ahora pues e decidido darte una carta a mi maneras
-    esa manera es programando algo para ti, se que hemos pasado tantas cosas juntos que al final del dia solo me queda agradecerte la paciencia 
-    que me has tenido cada dia que pasa, te amo desde ese dia en la bernal en la que me di cuenta y te amare siempre que te vea con esa carita bonita
-    que tienes, te ame, te amo y te amare siempre y creo que lo e demostrado con este año de "pausa", ovlver a tus brazos fue lo mejor que me pudo yhaber 
-    pasado creeme, sin ti no se que hubiera sido este año 2025, con esto quiero decirte que si fueran 5 años te esperaria aca sentado y el motivo por el 
-    que quiero las cosas ya es para darte todo lo que te mereces, se que a veces hago cosas que te enojan o estresan y que incluso te aburren, pero 
-    realmente gracias por todo, ya vamos a un año juntos y a sido el mejor año y espero seanmuchos mas a tu lado, comiendo, bailando, jugando, riendo,
-    llorando, etc.
-    </p>
-    <div class="btn-container">
-      <button class="btn" onclick="goBack()">⬅ Inicio</button>
-      <button class="btn" onclick="nextPage(2)">➡ Siguiente</button>
-    </div>
-  </div>
-  <div class="notepad" id="page2" style="display:none; text-align:center;">
-    <img src="fotos/Fotoespecial.jpeg" alt="Foto especial" style="width:90%; max-width:350px; border-radius:15px; box-shadow:4px 4px 10px rgba(0,0,0,0.2); margin-bottom:15px;">
-    <p style="text-align:justify;">
-      A veces solo quisiera tenerte conmigo siempre que pueda aunque por momentos parece complicado para los dos, quiero darlo todo para que funcione siempre
-      porque eres tu la que quiero a mi lado, eres tu la que no quiero dejar ir nunca y si tengo que aprender a quererete todos los dias lo hare, porque si me dieran a elegir
-      entre terminar y volver a iniciar todo tal como paso, lo volveria  a hacer, porque dos horas contigo son mil momento hermosos que recordare siempre. Te amo mucho mi vida❤️
-    </p>
-    <div class="btn-container">
-      <button class="btn" onclick="prevPage(1)">⬅ Anterior</button>
-      <button class="btn" onclick="nextPage(3)">➡ Siguiente</button>
-    </div>
-  </div>
-<div class="notepad" id="page3" style="display:none; text-align:center;">
-  <h4>📸 Nuestros recuerdos</h4>
-  <div class="carousel">
-    <div class="carousel-track" id="carouselTrack">
-      <img src="fotos/Foto1.jpeg" alt="Recuerdo 1">
-      <img src="fotos/foto 2.jpeg" alt="Recuerdo 2">
-      <img src="fotos/Foto3.jpeg" alt="Recuerdo 3">
-      <img src="fotos/foto4.jpeg" alt="Recuerdo 4">
-      <img src="fotos/Foto5.jpeg" alt="Recuerdo 5">
-      <img src="fotos/Foto6.jpeg" alt="Recuerdo 6">
-
-
-    </div>
-    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
-  </div>
-  <div class="btn-container">
-    <button class="btn" onclick="prevPage(2)">⬅ Anterior</button>
- <button class="btn" onclick="openGift()">🎁 Mi regalo</button>
-  </div>
-</div>
-<style>
 .carousel {
   position: relative;
   width: 90%;
@@ -207,7 +133,81 @@
 }
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
-</style>
+  </style>
+</head>
+<body>
+<!-- Pantalla de contraseña -->
+<div id="passwordScreen" class="screen active">
+  <h2>🔒 Ingresa la contraseña</h2>
+  <div class="input-display" id="inputDisplay">••••</div>
+  <div class="keypad">
+    <button class="key" onclick="enterDigit('1')">1</button>
+    <button class="key" onclick="enterDigit('2')">2</button>
+    <button class="key" onclick="enterDigit('3')">3</button>
+    <button class="key" onclick="enterDigit('4')">4</button>
+    <button class="key" onclick="enterDigit('5')">5</button>
+    <button class="key" onclick="enterDigit('6')">6</button>
+    <button class="key" onclick="enterDigit('7')">7</button>
+    <button class="key" onclick="enterDigit('8')">8</button>
+    <button class="key" onclick="enterDigit('9')">9</button>
+    <button class="key" onclick="checkPassword()">✔</button>
+    <button class="key" onclick="enterDigit('0')">0</button>
+    <button class="key" onclick="deleteLast()">⌫</button>
+  </div>
+</div>
+<div id="notepadScreen" class="screen">
+  <div class="notepad" id="page1">
+    <h3>📅 27 de diciembre del 2025</h3>
+    <h4>💌 Para mi querida niña hermosa</h4>
+    <p> Había pensado en tantas maneras de mandarte una carta y aunque te he escrito varias ahora pues he decidido darte una carta a mi manera.
+    Esa manera es programando algo para ti, sé que hemos pasado tantas cosas juntos que al final del día solo me queda agradecerte la paciencia 
+    que me has tenido cada día que pasa, te amo desde ese día en La Bernal en la que me di cuenta y te amaré siempre que te vea con esa carita bonita
+    que tienes, te amé, te amo y te amaré siempre y creo que lo he demostrado con este año de "pausa", volver a tus brazos fue lo mejor que me pudo haber 
+    pasado créeme, sin ti no sé qué hubiera sido este año 2025, con esto quiero decirte que si fueran 5 años te esperaría acá sentado y el motivo por el 
+    que quiero las cosas ya es para darte todo lo que te mereces, sé que a veces hago cosas que te enojan o estresan y que incluso te aburren, pero 
+    realmente gracias por todo, ya vamos a un año juntos y ha sido el mejor año y espero sean muchos más a tu lado, comiendo, bailando, jugando, riendo,
+    llorando, etc.
+    </p>
+    <div class="btn-container">
+      <button class="btn" onclick="goBack()">⬅ Inicio</button>
+      <button class="btn" onclick="nextPage(2)">➡ Siguiente</button>
+    </div>
+  </div>
+  <div class="notepad" id="page2" style="display:none; text-align:center;">
+    <img src="fotos/Fotoespecial.jpeg" alt="Foto especial" style="width:90%; max-width:350px; border-radius:15px; box-shadow:4px 4px 10px rgba(0,0,0,0.2); margin-bottom:15px;">
+    <p style="text-align:justify;">
+      A veces solo quisiera tenerte conmigo siempre que pueda aunque por momentos parece complicado para los dos, quiero darlo todo para que funcione siempre
+      porque eres tú la que quiero a mi lado, eres tú la que no quiero dejar ir nunca y si tengo que aprender a quererte todos los días lo haré, porque si me dieran a elegir
+      entre terminar y volver a iniciar todo tal como pasó, lo volvería a hacer, porque dos horas contigo son mil momentos hermosos que recordaré siempre. Te amo mucho mi vida❤️
+    </p>
+    <div class="btn-container">
+      <button class="btn" onclick="prevPage(1)">⬅ Anterior</button>
+      <button class="btn" onclick="nextPage(3)">➡ Siguiente</button>
+    </div>
+  </div>
+<div class="notepad" id="page3" style="display:none; text-align:center;">
+  <h4>📸 Nuestros recuerdos</h4>
+  <div class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="fotos/Foto1.jpeg" alt="Recuerdo 1">
+      <img src="fotos/Foto2.jpeg" alt="Recuerdo 2">
+      <img src="fotos/Foto3.jpeg" alt="Recuerdo 3">
+      <img src="fotos/Foto4.jpeg" alt="Recuerdo 4">
+      <img src="fotos/Foto5.jpeg" alt="Recuerdo 5">
+      <img src="fotos/Foto6.jpeg" alt="Recuerdo 6">
+
+
+    </div>
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  <div class="btn-container">
+    <button class="btn" onclick="prevPage(2)">⬅ Anterior</button>
+ <button class="btn" onclick="openGift()">🎁 Mi regalo</button>
+  </div>
+</div>
+
+</div>
 <script>
 let currentSlide = 0;
 function moveSlide(direction) {
@@ -218,9 +218,6 @@ function moveSlide(direction) {
   if (currentSlide >= slides) currentSlide = 0;
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
-</script>
-</div>
-<script>
   const correctPassword = '0302';
   let input = '';
   function enterDigit(digit) {
